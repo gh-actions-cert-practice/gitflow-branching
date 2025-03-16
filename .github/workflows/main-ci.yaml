@@ -1,4 +1,4 @@
-name: 'Develop CI workflow'
+name: 'Main CD workflow'
 
 on:
   push:
@@ -8,21 +8,11 @@ on:
       - '.github/**'
 
 jobs:
-  feature-CI:
+  main-CD:
     runs-on: ubuntu-latest
     steps:
-      - name: 'Compilation step'
+      - name: 'Deployment step'
         run: |
-          echo "Compiling..."
+          echo "Deploying"..."
           sleep 15s
-          echo "Compiled!"
-      - name: 'Testing step'
-        run: |
-          echo "Testing..."
-          sleep 15s
-          echo "Tested!"
-      - name: 'SAST step'
-        run: |
-          echo "Checking code quality..."
-          sleep 15s
-          echo "Checked!"
+          echo "Deployed!"
