@@ -1,0 +1,28 @@
+name: 'Develop CI workflow'
+
+on:
+  push:
+    branches:
+      - 'feature/**'
+    paths-ignore:
+      - '.github/**'
+
+jobs:
+  feature-CI:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Compilation step'
+        run: |
+          echo "Compiling..."
+          sleep 15s
+          echo "Compiled!"
+      - name: 'Testing step'
+        run: |
+          echo "Testing..."
+          sleep 15s
+          echo "Tested!"
+      - name: 'SAST step'
+        run: |
+          echo "Checking code quality..."
+          sleep 15s
+          echo "Checked!"
