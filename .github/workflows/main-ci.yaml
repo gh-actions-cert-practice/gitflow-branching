@@ -1,9 +1,9 @@
 name: 'Main CD workflow'
 
 on:
-  push:
+  pull_request:
     branches:
-      - 'feature/**'
+      - 'main'
     paths-ignore:
       - '.github/**'
 
