@@ -26,3 +26,12 @@ jobs:
           echo "Checking code quality..."
           sleep 15s
           echo "Checked!"
+  develop-CD:
+    runs-on: ubuntu-latest
+    environment: development
+    steps:
+      - name: 'Deployment step'
+        run: |
+          echo "Deploying"..."
+          sleep 15s
+          echo "Deployed!"
