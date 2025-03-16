@@ -1,5 +1,7 @@
 # gitflow-branching
 
+This repo content is basic and just serves as practice for GitHub Actions certification.
+
 ### GitFlow branching strategy
 This repo's CI and CD is implemented using **GitFlow branching strategy**:
 
