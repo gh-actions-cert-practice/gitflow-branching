@@ -27,6 +27,7 @@ jobs:
           sleep 15s
           echo "Checked!"
   develop-CD:
+    needs: develop-CI
     runs-on: ubuntu-latest
     environment: development
     steps:
