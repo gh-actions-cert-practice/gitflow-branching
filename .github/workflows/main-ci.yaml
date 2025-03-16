@@ -1,9 +1,9 @@
-name: 'Feature CI workflow'
+name: 'Develop CI workflow'
 
 on:
-  pull_request:
+  push:
     branches:
-      - 'develop'
+      - 'feature/**'
     paths-ignore:
       - '.github/**'
 

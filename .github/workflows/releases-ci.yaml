@@ -1,14 +1,14 @@
-name: 'Feature CI workflow'
+name: 'Release CI workflow'
 
 on:
-  pull_request:
+  push:
     branches:
-      - 'develop'
+      - 'release/**'
     paths-ignore:
       - '.github/**'
 
 jobs:
-  feature-CI:
+  releases-CI:
     runs-on: ubuntu-latest
     steps:
       - name: 'Compilation step'
